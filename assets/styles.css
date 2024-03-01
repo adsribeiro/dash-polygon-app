@@ -1,0 +1,42 @@
+/* ========== Main Configs ============ */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(247, 244, 244, 0.692);
+    border-color: #2F4D6C;
+    /* border-radius: 10px 10px 0 0; */
+    /* Outros estilos do card */
+}
+
+img {
+    padding: 10px;
+    /* width: 90%;
+    height: 150px; */
+    /* margin: 5px; */
+    /* background-color: inherit; */
+    /* opacity: 0.8; */
+    /* color: var(--text-primary); */
+    filter:invert(99%) sepia(100%) saturate(193%) hue-rotate(339deg) brightness(107%) contrast(102%);
+  }
+/* ============ Corrigindo as cores do menu dropdown ===========*/
+/* div.Select-control {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    border: 0.5px solid #1b1e20;
+    font-size: 80%;
+}
+
+.VirtualizedSelectOption {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white !important;
+}
+
+.Select-value-label {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white !important;
+} */
+
+/* dropdown menu options */
+/* .dbc .VirtualizedSelectOption {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+} */

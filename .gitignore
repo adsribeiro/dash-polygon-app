@@ -1,5 +1,5 @@
 .venv
 .dockerignore
 .gcloudignore
-assets
+assets/mapbox_token
 datasets
