@@ -27,7 +27,7 @@ def update_map(n_clicks,uf, cidades):
         options
         .drop_nulls("geometry")
         .with_columns(
-            pl.col("status").replace({"Ativo":"Active","Inativo":"Inactive"}).cast(pl.Categorical)
+            pl.col("status").replace({"Sim":"Active","Não":"Inactive"}).cast(pl.Categorical)
                 )
         .filter((pl.col("uf")==uf) & (pl.col("municipio").is_in(cidades)))
         ).collect().rename({"geometry":"polygon"}).to_pandas()
@@ -51,7 +51,7 @@ def update_map(n_clicks,uf, cidades):
                                     'uf':True,
                                     'area_m2':True,
                                     'data_criacao':True,
-                                    'data_lteracao':True,
+                                    'data_alteracao':True,
                                     'status':True})
         fig.update_layout(mapbox_accesstoken=token, margin = dict(t=0, l=0, r=0, b=0),paper_bgcolor = '#73736e',
                             autosize=True,legend=dict(yanchor="top", y=0.99, xanchor="left", x=0.01,

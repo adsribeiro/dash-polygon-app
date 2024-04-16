@@ -2,7 +2,7 @@ from dash import Dash
 import dash_bootstrap_components as dbc
 import polars as pl
 
-options = pl.scan_parquet("./datasets/poligonos_tratado.parquet")
+options = pl.scan_parquet("./datasets/poligonos_tratado_v1.parquet")
 template_theme1 = "darkly"
 url_theme1 = dbc.themes.DARKLY
 
